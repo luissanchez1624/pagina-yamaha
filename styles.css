@@ -1,0 +1,207 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Sección Acerca de Nosotros */
+.seccion {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#acerca {
+    background-color: #e0e0e0;
+}
+
+#productos {
+    background-color: #ffffff;
+}
+
+#caracteristicas {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 30%;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    color: #003366;
+}
+
+.producto p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.btn-rojo {
+    background-color: #ff0000; /* Rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    transition: background-color 0.3s ease; /* Transición suave */
+    text-decoration: none;
+}
+
+.btn-rojo:hover {
+    background-color: #cc0000; /* Rojo más oscuro en hover */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box; /* Para evitar que el padding rompa el ancho */
+}
+
+textarea {
+    resize: vertical; /* Permite cambiar el tamaño del área de texto solo en dirección vertical */
+}
+
+button {
+    background-color: #ff0000; /* Rojo */
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Rojo más oscuro en hover */
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
